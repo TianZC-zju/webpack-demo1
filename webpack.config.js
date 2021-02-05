@@ -9,5 +9,16 @@ module.exports = {
         // path:'dist',
         filename: '[name].[contenthash].js',
     },
-    plugins: [new HtmlWebpackPlugin()]
+    plugins: [new HtmlWebpackPlugin()],
+    devServer: {
+        contentBase: './dist',
+    },
+    module: {
+        rules: [
+            {
+                test: /\.css$/i,
+                use: ["style-loader", "css-loader"],
+            },
+        ],
+    }
 };

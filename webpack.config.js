@@ -6,10 +6,12 @@ module.exports = {
     module: {
         rules: [
             // ...base.module.rules,
+            //.css
             {
                 test: /\.css$/i,
                 use: [MiniCssExtractPlugin.loader, "css-loader"],
             },
+            //.scss
             {
                 test: /\.scss$/i,
                 use: [
@@ -24,6 +26,22 @@ module.exports = {
                     },
                 ],
             },
+            //.less
+            {
+                test: /\.less$/i,
+                use: ["style-loader","css-loader","less-loader"],
+            },
+            //.styl
+            {
+                test: /\.styl$/,
+                use: ["style-loader","css-loader","stylus-loader"],
+            },
+            //.png
+            {
+                test: /\.(png|jpe?g|gif|jpg)$/i,
+                use: ['file-loader',],
+            }
+
         ],
     }
 };

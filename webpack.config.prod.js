@@ -1,15 +1,10 @@
-const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const base = require("./webpack.config.base.js")
 module.exports = {
     ...base,
-    mode: "development",
+    mode: "production",
     module: {
         rules: [
             // ...base.module.rules,
-            {
-                test: /\.css$/i,
-                use: [MiniCssExtractPlugin.loader, "css-loader"],
-            },
             {
                 test: /\.scss$/i,
                 use: [
@@ -19,7 +14,7 @@ module.exports = {
                         loader: "sass-loader",
                         options: {
                             // `dart-sass` 是首选
-                            implementation: require("dart-sass")
+                            implementation: require("dart-sass"),
                         },
                     },
                 ],

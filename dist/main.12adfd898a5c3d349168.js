@@ -116,7 +116,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bab */ \"./src/bab.js\");\n/* harmony import */ var _st2_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./st2.scss */ \"./src/st2.scss\");\n/* harmony import */ var _lessStyle_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lessStyle.less */ \"./src/lessStyle.less\");\n/* harmony import */ var _stylTest_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stylTest.styl */ \"./src/stylTest.styl\");\n/* harmony import */ var _2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./2.jpg */ \"./src/2.jpg\");\n\r\n// import './style.css'\r\n\r\n\r\n\r\n\r\n\r\nconsole.log(_bab__WEBPACK_IMPORTED_MODULE_0__.default)\r\nconsole.log(\"hahahah\")\r\nlet img1 = document.querySelector(\".img1\")\r\nimg1.innerHTML=`<img src=${_2_jpg__WEBPACK_IMPORTED_MODULE_4__.default}>`\r\nconst button = document.createElement('button')\r\nbutton.innerText=\"懒加载\"\r\nbutton.onclick =()=>{\r\n    const promise = __webpack_require__.e(/*! import() */ \"src_lazy_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./lazy */ \"./src/lazy.js\"))\r\n    promise.then((module)=>{\r\n        const fn = module.default\r\n        fn()\r\n    },()=>{})\r\n}\r\nimg1.appendChild(button)\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./bab */ \"./src/bab.js\");\n/* harmony import */ var _st2_scss__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./st2.scss */ \"./src/st2.scss\");\n/* harmony import */ var _lessStyle_less__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./lessStyle.less */ \"./src/lessStyle.less\");\n/* harmony import */ var _stylTest_styl__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./stylTest.styl */ \"./src/stylTest.styl\");\n/* harmony import */ var _2_jpg__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./2.jpg */ \"./src/2.jpg\");\n\n// import './style.css'\n\n\n\n\n\nconsole.log(_bab__WEBPACK_IMPORTED_MODULE_0__.default)\nconsole.log(\"hahahah\")\nlet img1 = document.querySelector(\".img1\")\nimg1.innerHTML=`<img src=${_2_jpg__WEBPACK_IMPORTED_MODULE_4__.default}>`\nconst button = document.createElement('button')\nbutton.innerText=\"懒加载\"\nbutton.onclick =()=>{\n    const promise = __webpack_require__.e(/*! import() */ \"src_lazy_js\").then(__webpack_require__.bind(__webpack_require__, /*! ./lazy */ \"./src/lazy.js\"))\n    promise.then((module)=>{\n        const fn = module.default\n        fn()\n    },()=>{})\n}\nimg1.appendChild(button)\n\n//# sourceURL=webpack://webpack-demo/./src/index.js?");
 
 /***/ })
 
@@ -191,7 +191,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _bab
 /******/ 		// This function allow to reference async chunks
 /******/ 		__webpack_require__.u = (chunkId) => {
 /******/ 			// return url for filenames based on template
-/******/ 			return "" + chunkId + "." + "22123236a5a0f43edc1e" + ".js";
+/******/ 			return "" + chunkId + "." + "06ab83fd4a9b2dea7a64" + ".js";
 /******/ 		};
 /******/ 	})();
 /******/ 	
